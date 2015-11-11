@@ -1,3 +1,6 @@
 # IGNORE TEMP FILE
 
 *~
+
+# IGNORE VAGRANT FILES
+.vagrant/*
