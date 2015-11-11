@@ -1,0 +1,15 @@
+[alias]
+        ss = stash save
+        rd = rebase dev
+        rdi = rebase -i dev
+        pru = remote update origin --prune
+        mf = merge --no-ff
+        ap = add --patch
+        cont = rebase --continue
+        last = log -1 --stat
+        co = checkout
+        ci = commit
+        cia = commit -a -m
+        st = status -sb
+        br = branch
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
