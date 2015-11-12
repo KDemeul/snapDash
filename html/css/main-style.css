@@ -1,7 +1,15 @@
-body {
-  padding-top: 50px;
+body
+{
+	padding-top: 50px;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+.todolist
+{
+	background-color: #fffcfc;
+	background-image: url("http://www.transparenttextures.com/patterns/cream-paper.png");
+}
+
+.transparent-bg
+{
+	background-color: transparent;
 }
