@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="appDashboard">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Dashboard</title>
+  <title>Dashboard</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/main-style.css" rel="stylesheet">
+  <!-- Font awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <!-- Angular -->
-    <script src="js/angular/angular.min.js"></script>
+  <!-- Custom CSS -->
+  <link href="css/main-style.css" rel="stylesheet">
 
-    <script src="js/app.js"></script>
+  <!-- Angular -->
+  <script src="js/angular/angular.min.js"></script>
 
-  </head>
+  <script src="js/app.js"></script>
 
-  <body ng-controller="MainController as mainCtrl">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-4 todolist">
-          <h2> TO DO </h2>
-          <ul class="list-group">
-            <li class="list-group-item transparent-bg" ng-repeat="itemtodo in mainCtrl.todolist" ng-include="'todo.html'"></li>
-          </ul>
-        </div>
-      </div><!-- /.row -->
-    </div><!-- /.container -->
+</head>
 
+<body ng-controller="MainController as mainCtrl">
+  <div class="container">
+    <div class="row" ng-include="'todolist-form.html'"></div>
+  </div>
 
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="bootstrap/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>

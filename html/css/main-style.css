@@ -1,15 +1,36 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
+}
+
 body
 {
 	padding-top: 50px;
+	font-family: 'Source Sans Pro';
 }
 
 .todolist
 {
-	background-color: #fffcfc;
-	background-image: url("http://www.transparenttextures.com/patterns/cream-paper.png");
+	background-color: #ECF0F1;
+	/*background-image: url("http://www.transparenttextures.com/patterns/cream-paper.png");*/
+	padding-bottom: 20px;
+	border-radius: 5px;
 }
 
 .transparent-bg
 {
-	background-color: transparent;
+	background: transparent;
+}
+
+.done-true
+{
+	text-decoration: line-through;
+	color: grey;
+}
+
+.btn-offset
+{
+	color: transparent;
 }

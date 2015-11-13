@@ -1,0 +1,8 @@
+<div class="col-xs-4 todolist form-group">
+	<h2 class="text-center"> To Do </h2>
+	<form class="form-horizontal">
+		<div class="transparent-bg" ng-include="'todo.html'" ng-repeat="itemtodo in mainCtrl.todolist"></div>
+		<div class="transparent-bg" ng-include="'todo-add.html'"></div>
+		<div class="transparent-bg" ng-include="'todo-archive.html'"></div>
+	</form>
+</div>
